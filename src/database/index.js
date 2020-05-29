@@ -10,3 +10,5 @@ erp_usuario.init(connection);
 
 
 module.exports = connection;
+
+//teste
