@@ -13,8 +13,11 @@ const UsuariosController = require('./controllers/UsuariosController');
 const UsuFornController = require('./controllers/UsuFornController');
 
 
+const VendestgeralController = require('./controllers/VendestgeralController');
 
+const MovlogdiaController = require('./controllers/MovlogdiaController');
 
+const MovlogdiadfController = require('./controllers/MovlogdiadfController');
 
 const routes = express.Router();
 
@@ -31,6 +34,11 @@ routes.get('/Estoquetotal/:for_cod',EstoquetotalController.index);
 
 routes.get('/erp_usuarios/:usu_login/:usu_senha',UsuariosController.index);
 
+routes.get('/vendeestgeral/:dataini/:datafim/:codigofab',VendestgeralController.listAllProducts);
+
+routes.get('/movlogdia',MovlogdiaController.listAllProducts);
+
+routes.get('/movlogdiadf',MovlogdiadfController.listAllProducts);
 
 
 

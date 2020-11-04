@@ -14,6 +14,10 @@ const erp_fornecedor_usuario = require('../models/erp_fornecedor_usuario');
 
 
 
+const vendestgerals = require('../models/vendestgeral');
+
+
+
 
 
 const connection = new Sequelize(dbConfig);
@@ -26,6 +30,8 @@ estoquetotal.init(connection);
 erp_usuarios.init(connection);
 
 erp_fornecedor_usuario.init(connection);
+
+vendestgerals.init(connection);
 
 
 
